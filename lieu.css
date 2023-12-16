@@ -1,0 +1,73 @@
+body{
+    font-size: 16px;
+    font-size: 16px;/*pour la taille du texte*/
+    font-family: verdana sans-serif;
+}
+#section1{
+    background-color: rgba( 170, 200, 40, 0.6);
+    padding: 10px;/*pour aerer les different élement de la section 1*/
+    margin: 26px;/*une margine de 26 px de deux côté*/
+}
+#section2{
+    background-color: rgba( 29, 100, 78, 0.6);
+    padding: 10px;
+    margin: 26px;
+}
+#section3{
+    background-color: rgba( 100, 200, 50, 0.6);
+    padding: 10px;
+    margin: 26px; 
+}
+#section4{
+    background-color: rgba( 100, 100, 70, 0.6);
+    padding: 10px;
+    margin: 26px;
+}
+/*on cree une ombre lorque le visiteur passe l'ecurseur */
+#section1:hover, #section2:hover, #section3:hover, #section4:hover{
+   box-shadow: 0px 0px 5px #444; 
+}
+/* on met les legende en gras, majuscule,une police
+*tres grande  et une couleur claire pour bien les voir */
+legend{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+ /*pour les input  à remplir
+ * on augment un peu le champs de saisi */
+#section1 input{
+    width: 300px; 
+    height: 20px;
+}
+/*pour les cases à cosher*/
+#section2 input, section3 input{
+    width: 15px;  
+    height: 15px; 
+}
+/*pour les label*/
+#section1 label{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0px 15px 40px;
+}
+#section2 label, #section3 label, #section4 label{
+    display: inline-block;
+    width: 100px;
+    padding: 5px 0px 15px 10px;
+}
+/*styliser notre boutton*/
+input[type="submit"]:hover{
+  box-shadow: 0px 0px 4px  #555;
+  background-color: #e8ab20;
+}
+input[type="submit"]{
+    float: right;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;/*le mettre d'abord en blanc */
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 9px;
+    background-color: rgb(190, 090, 097);/*et puis le donner un autre couleur*/
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+    <html lang="en-US">
+        <head>
+            <title>deuxieme lien </title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="lieu.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body> 
+            <form method="post" action="traitement.php">
+                <fieldset id="section1">
+                    <legend> Information personnel : </legend>
+                    <label for="liaison1"> Entrez votre prénom</label>
+                    <!--label indique à l'user what he can writ dans chaque champs
+                    de formulaire-->
+                    <input type="text" id="liaison1" name="liaison1"  placeholder="ex: mohamed"><br>
+                    <!--name is used for in all the formulaire champs
+                    for describe the data tha we will receve(valeur qu'on veult
+                    mais elle est unique-->
+               
+                    <label for="liaison2"> Une petite presentation</label>
+                    <textarea id="liaison2" id="liaison2" autofocus="autofocus"> </textarea><br>
+                    
+                    <label for="pass">Entrez un mot de passe</label>
+                    <input type="password" id="pass" name="pass"><br>
+                    
+                    <label for="date">birthday</label>
+                    <input type="date" id="date" name="oui"><br>
+                    
+                    <label for="email"> Email</label>
+                    <input type="email" id="email" name="nom"><br>
+                     
+                    <label for="site"> votre site</label>
+                    <input type="url" id="site" name="kkk"><br>
+                    
+                    <label for="tel"> put number</label>
+                    <input type="number" id="tel" name="hou" min="1" max="10"><br>
+                </fieldset>
+                    
+                <fieldset id="section2">
+                    <legend> le genre </legend>
+                    <h2> Un homme ou une femme?</h2>
+                    <input type="radio" id="homme" name="sexe" value="homme" >
+                    <label for="homme">Un homme</label>
+                    <input type="radio" id="fem" name="sexe" value="fem">
+                    <label for="fem"> Une femme</label>
+                    
+                    <h3> Majeur ou Mineur?</h3>
+                    <input type="radio" id="maj" name="age" value="maj">
+                    <label for="maj">Majeur</label>
+                    <input type="radio" id="min" name="age" value="min">
+                    <label for="min"> Mineur</label>
+                </fieldset>
+                <fieldset id="section3">
+                    <legend> loisir</legend>
+                    Quel(s) sport(s) pratiquez vous ? <br>
+                    <input type="checkbox" name="sport" id="spt" value="spt">
+                    <label for="spt">Frisbee</label>
+                    <input type="checkbox" name="sport" id="s" value="s">
+                    <label for="s">Cyclisme</label>
+                    <input type="checkbox" name="sport" id="st" value="st">
+                    <label for="st">Natation</label>
+                    <input type="checkbox" name="sport" id="sut" value="sut">
+                    <label for="sut">Football</label>
+                </fieldset>
+                <fieldset id="section4">
+                    <legend> Information suplementaire</legend>
+                    Ou habilez vous?<br>
+                    <select name="pay">
+                        <optgroup label="Europe">
+                            <option value="france">france</option>
+                        </optgroup>
+                        <optgroup label="afrique">
+                            <option value="comores" selected="selected">comores</option>
+                            <option value="senegale">senegale</option>
+                            <option vale="soudan">soudam</option>
+                            <option value="kenya">kenya</option>
+                        </optgroup>
+                        <optgroup label="amerique">
+                            <option value="argentine">argentine</option>
+                            <option value="brazil"> brazil</option>
+                        </optgroup>
+                    </select><br><br>
+                </fieldset>
+               
+                
+                <input type="submit" value="send">
+                <!-- send will perform if we have an operate data(php)-->
+            </form>
+        </body>
+    </html>
